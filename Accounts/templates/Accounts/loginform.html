@@ -30,7 +30,8 @@
             </form>
         </div>
         <div id="thirddiv">
-            <form>
+            <form method="POST" action="{% url 'login' %}" enctype="multipart/form-data">
+                {% csrf_token %}
                 <label for="susername">Username</label> <br>
                 <input type="text" id="susername" name="susername"> <br>
                 <label for="spassword">Password</label> <br>

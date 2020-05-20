@@ -17,11 +17,26 @@ def signup(request):
             if qs.exists():
                 return render(request, 'Accounts/loginform.html', {'error':'Username already exists'})
             else:
-                user = User.objects.create_user(
+                User.objects.create_user(
                     request.POST['username'],
                     password=request.POST['password']
                 )
-                auth.login(request, user)
-                return render(request, 'Accounts/books.html')
+                return render(request, 'Accounts/loginform.html', {'error':'Please login'})
+        else:
+            return render(request, 'Accounts/loginform.html', {'error':'Password must match'})
 
     return render(request, 'Accounts/loginform.html')
+
+
+def login(request):
+    if request.method == 'POST':
+        username = request.POST['susername']
+        pw = request.POST['spassword']
+        user = auth.authenticate(username=username, password=pw)
+        if user is not None:
+            auth.login(request, user)
+            return render(request, 'Accounts/books.html')
+        else:
+            return render(request, 'Accounts/loginform.html', {'error':'Username or Password is incorrect'})
+    else:
+         return render(request, 'Accounts/loginform.html')
