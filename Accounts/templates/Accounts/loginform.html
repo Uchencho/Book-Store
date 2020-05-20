@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Booksmith</title>
+    <link rel="stylesheet" href="loginform.css" type="text/css">
+</head>
+<body>
+        <div id="firstdiv">
+            <p class="welcome">Welcome to Booksmith! </p>
+            <p>
+                Booksmith is an online bookstore that focus on good quality books for reading!
+            </p> 
+            <p id="boomone">Pick a book, Gain more Knowledge!</p>
+            <!-- <button class="type">SIGN IN</button> -->
+        </div>
+        <div id="secondiv">
+            <h3>Create Account</h3>
+            <form>
+                <input type="text" id="username" name="username" placeholder="Username"> <br>
+                <input type="email" id="email" name="email" placeholder="Email"> <br>
+                <input type="password" id="password" name="password" placeholder="Password"> <br>
+                <input type="password" id="password" name="password" placeholder="Confirm Password"> <br>
+                <button class="typetwo">SIGN UP</button>
+
+            </form>
+        </div>
+        <div id="thirddiv">
+            <form>
+                <label for="susername">Username</label> <br>
+                <input type="text" id="susername" name="susername"> <br>
+                <label for="spassword">Password</label> <br>
+                <input type="password" id="spassword" name="spassword"> <br>
+                <a class="boom" href="#"><p>Forgot password?</p></a>
+                <button class="typetwo">SIGN IN</button>
+            </form>
+            <p class="boomtwo">New to Booksmith? 
+                <a class="boomthird" href="#" onclick="kris()">Create Account</a>
+            </p>
+        </div>
+    <script>
+        function kris(){
+            document.getElementById("thirddiv").style.display="none";document.getElementById("secondiv").style.display="block";
+        }
+    </script>
+</body>
+</html>

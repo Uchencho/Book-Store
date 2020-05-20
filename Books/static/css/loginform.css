@@ -1,0 +1,112 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background-color: seagreen;
+}
+.boom{
+    font-size:0.9em;
+    text-align: right;
+    text-decoration: none;
+    color:#484848;
+}
+#boomone{
+    padding-top:50px;
+}
+.boomtwo{
+    font-size:0.9em;
+}
+.boomthird{
+    text-decoration: none;
+}
+
+#firstdiv{
+    color:white;
+    padding:50px 90px 30px;
+    box-shadow: inset 0 0 10px white;
+    width:500px;
+    background-color: seagreen;
+    margin:0 auto;
+    text-align:center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3{
+    color:seagreen;
+}
+#secondiv{
+    display:none;
+    width:500px;
+    padding:40px 90px 30px;
+    background-color: white;
+    text-align: center;
+    margin:0 auto;
+    box-shadow:inset 0 0 10px seagreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#thirddiv{
+    width:500px;
+    padding:40px 90px 40px;
+    background-color: white;
+    text-align: center;
+    margin:0 auto;
+    box-shadow:inset 0 0 10px seagreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.type{
+    padding:10px;
+    width:150px;
+    border:1px solid white;
+    border-radius:2em;
+    margin-top:20px;
+    cursor:pointer;
+    background-color: seagreen;
+    color:white;
+    
+}
+.typetwo{
+    border:1px solid white;
+    padding:10px ;
+    width:150px;
+    border-radius:2em;
+    margin-top:15px;
+    cursor:pointer;
+    background-color: seagreen;
+    color:white;
+    
+}
+#susername, #spassword{
+    width:80%;
+    height:35px;
+    margin-bottom:8px;
+    border:none;
+    border-bottom:thin solid seagreen ;
+    /* background-color: rgba(46,139,87,0.2); */
+}
+#username, #email, #password{
+    width:80%;
+    height:35px;
+    margin-bottom:8px;
+    border:thin solid #bfbfbf;
+    border-radius: 0.5em;
+    background-color: rgba(46,139,87,0.2);
+}
+/* @media screen and (max-width:600px){
+    #firstdiv{
+        width:100%;
+    }
+    #secondiv{
+        width:100%;
+    }
+    #username, #email, #password{
+        width:100%;
+    }
+
+}
+@media screen and (max-width:400px){
+    .type{
+        width:110px;
+    }
+    .typetwo{
+        width:110px;
+    }
+} */
