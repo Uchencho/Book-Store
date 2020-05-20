@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Booksmith</title>
-    <link rel="stylesheet" href="loginform.css" type="text/css">
+    <!-- <link rel="stylesheet" href="loginform.css" type="text/css"> -->
+    <link rel="stylesheet" href="{% static 'css/loginform.css' %}" type="text/css">
 </head>
 <body>
         <div id="firstdiv">
@@ -39,10 +41,6 @@
                 <a class="boomthird" href="#" onclick="kris()">Create Account</a>
             </p>
         </div>
-    <script>
-        function kris(){
-            document.getElementById("thirddiv").style.display="none";document.getElementById("secondiv").style.display="block";
-        }
-    </script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

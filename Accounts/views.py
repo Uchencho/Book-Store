@@ -3,4 +3,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def homepage(request):
-    return render(request, 'Accounts/homepage.html')
+    return render(request, 'Accounts/loginform.html')
