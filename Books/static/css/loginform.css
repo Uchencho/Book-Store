@@ -2,7 +2,38 @@
     box-sizing:border-box;
 }
 body{
-    background-color: seagreen;
+    /* background-color: seagreen; */
+    animation: pulse 10s infinite;
+}
+@keyframes pulse{
+    0%{
+        background-color: seagreen;
+    }
+    100%{
+        background-color: white;
+    }
+}
+#secondiv{
+    animation: step 10s infinite;
+}
+@keyframes step{
+    0%{
+        background-color:white;
+    }
+    100%{
+        background-color: seagreen;
+    }
+}
+#thirddiv{
+    animation: step 10s infinite;
+}
+@keyframes step{
+    0%{
+        background-color:white;
+    }
+    100%{
+        background-color: seagreen;
+    }
 }
 .boom{
     font-size:0.9em;
@@ -12,6 +43,7 @@ body{
 }
 #boomone{
     padding-top:50px;
+    
 }
 .boomtwo{
     font-size:0.9em;
@@ -21,14 +53,18 @@ body{
 }
 
 #firstdiv{
+    font-family:'Amaranth';
+    font-size: 1.4em;
     color:white;
-    padding:50px 90px 30px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url("bookstore.jpeg");
+    background-size: 100% 100%;
+    padding:30px 0px 20px 0px;
     box-shadow: inset 0 0 10px white;
     width:500px;
     background-color: seagreen;
     margin:0 auto;
-    text-align:center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
 }
 h3{
     color:seagreen;
@@ -36,7 +72,7 @@ h3{
 #secondiv{
     display:none;
     width:500px;
-    padding:40px 90px 30px;
+    padding:20px 90px 30px;
     background-color: white;
     text-align: center;
     margin:0 auto;
@@ -45,7 +81,7 @@ h3{
 }
 #thirddiv{
     width:500px;
-    padding:40px 90px 40px;
+    padding:40px 90px 20px;
     background-color: white;
     text-align: center;
     margin:0 auto;
@@ -90,6 +126,14 @@ h3{
     border-radius: 0.5em;
     background-color: rgba(46,139,87,0.2);
 }
+.welcome, #boomone, .let{
+    text-align:center;
+}
+/* .welcome, .let, #boomone{
+    backdrop-filter: blur(4px);
+   
+    
+} */
 /* @media screen and (max-width:600px){
     #firstdiv{
         width:100%;

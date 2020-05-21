@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Booksmith</title>
+    <title>Booksmith</title>
     <!-- <link rel="stylesheet" href="loginform.css" type="text/css"> -->
     <link rel="stylesheet" href="{% static 'css/loginform.css' %}" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel="stylesheet">
 </head>
 <body>
         <div id="firstdiv">
             <p class="welcome">Welcome to Booksmith! </p>
-            <p>
-                Booksmith is an online bookstore that focus on good quality books for reading!
+            <p class="let">
+                For the Love of Books, we provide quality ebooks which can be read from your Library.
             </p> 
-            <p id="boomone">Pick a book, Gain more Knowledge!</p>
-            <!-- <button class="type">SIGN IN</button> -->
+            <p id="boomone">Pick a book, Gain Knowledge!</p>
         </div>
         <div id="secondiv">
             <h3>Create Account</h3>
@@ -24,7 +24,7 @@
                 <input type="text" id="username" name="username" placeholder="Username"> <br>
                 <input type="email" id="email" name="email" placeholder="Email"> <br>
                 <input type="password" id="password" name="password" placeholder="Password"> <br>
-                <input type="password" id="password" name="password2" placeholder="Confirm Password"> <br>
+                <input type="password" id="password" name="password" placeholder="Confirm Password"> <br>
                 <button class="typetwo">SIGN UP</button>
 
             </form>
@@ -44,5 +44,6 @@
             </p>
         </div>
     <script src="{% static 'js/main.js' %}"></script>
+    <!-- <script src="main.js"></script> -->
 </body>
 </html>
