@@ -2,38 +2,8 @@
     box-sizing:border-box;
 }
 body{
-    /* background-color: seagreen; */
-    animation: pulse 10s infinite;
-}
-@keyframes pulse{
-    0%{
-        background-color: seagreen;
-    }
-    100%{
-        background-color: white;
-    }
-}
-#secondiv{
-    animation: step 10s infinite;
-}
-@keyframes step{
-    0%{
-        background-color:white;
-    }
-    100%{
-        background-color: seagreen;
-    }
-}
-#thirddiv{
-    animation: step 10s infinite;
-}
-@keyframes step{
-    0%{
-        background-color:white;
-    }
-    100%{
-        background-color: seagreen;
-    }
+    background-color: #e6e8ff;
+    margin:0;
 }
 .boom{
     font-size:0.9em;
@@ -50,24 +20,59 @@ body{
 }
 .boomthird{
     text-decoration: none;
+    color:#08a0e9;
 }
-
+/* ../img/bookstore.jpeg */
+#foot{
+    padding-top:15px;
+    text-align: center;
+    color:black;
+    font-family: 'ABeeZee';
+    font-size: 0.9em;
+  
+}
+.foot{
+    padding:0px 3px;
+    border-right:thin solid black;
+    border-left:thin solid black;
+}
 #firstdiv{
     font-family:'Amaranth';
     font-size: 1.4em;
     color:white;
     background-image: linear-gradient(rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)), url("../img/bookstore.jpeg");
+    rgba(0,0,0,0.5)), url(" ../img/bookstore.jpeg");
     background-size: 100% 100%;
     padding:30px 0px 20px 0px;
     box-shadow: inset 0 0 10px white;
     width:500px;
-    background-color: seagreen;
     margin:0 auto;
    
 }
+.gmail,.linkedin{
+    padding:7px;
+    color:black;
+    font-size:1.1em;
+}
 h3{
     color:seagreen;
+}
+nav{
+    background-color: seagreen;
+    padding:3px;
+    color:white;
+  
+    width:100%;
+   
+}
+ul{
+    list-style-type: none;
+  
+}
+li{
+    display:inline-block;
+    padding:5px;
+  
 }
 #secondiv{
     display:none;
@@ -129,14 +134,136 @@ h3{
 .welcome, #boomone, .let{
     text-align:center;
 }
-/* .welcome, .let, #boomone{
-    backdrop-filter: blur(4px);
+@media screen and (max-width:600px){
+    /* #secondiv{
+        display:none;
+        width:500px;
+        padding:20px 90px 30px;
+        background-color: white;
+        text-align: center;
+        margin:0 auto;
+        box-shadow:inset 0 0 10px seagreen;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #thirddiv{
+        width:500px;
+        padding:40px 90px 20px;
+        background-color: white;
+        text-align: center;
+        margin:0 auto;
+        box-shadow:inset 0 0 10px seagreen;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    } */
+    .boom{
+        font-size:0.8em;
+        text-align: right;
+        text-decoration: none;
+        color:#484848;
+    }
+    .boomtwo{
+        font-size:0.85em;
+      
    
-    
-} */
-/* @media screen and (max-width:600px){
+    }
+    .boomthird{
+        font-size:0.85em;
+        
+    }
+    #firstdiv{
+        width:70%;
+        padding:10px 0px 10px 0px;
+        font-size: 1.2em;
+    }
+    #boomone{
+        padding-top:20px;
+    }
+
+    #secondiv{
+        width:70%;
+    }
+    /* #username, #email, #password{
+        width:100%;
+    } */
+    #thirddiv{
+        width:70%;
+    }
+    .typetwo{
+        width:120px;
+    }
+
+}
+@media screen and (max-width:530px){
+   
+
+}
+@media screen and (max-width:500px){
+    #firstdiv{
+        width:80%;
+        
+    }
+    #boomone{
+        padding-top:10px;
+        
+    }
+    #secondiv{
+        width:80%;
+    }
+    #username, #email, #password{
+        width:100%;
+    }
+    #thirddiv{
+        width:80%;
+    }
+    .gmail,.linkedin{
+        font-size:0.95em;
+    }
+
+}
+@media screen and (max-width:400px){
+    #firstdiv{
+        width:90%;
+        
+    }
+    #boomone{
+        padding-top:5px;
+        
+    }
+    #secondiv{
+        width:90%;
+    }
+    #username, #email, #password{
+        width:100%;
+    }
+    #thirddiv{
+        width:90%;
+    }
+    .gmail,.linkedin{
+        font-size:0.9em;
+    }
+
+}
+@media screen and (max-width:320px){
+     .boom{
+        font-size:0.75em;
+        text-align: right;
+        text-decoration: none;
+        color:#484848;
+    }
+    .typetwo{
+        width:100px;
+    }
+
+    .boomthird{
+        font-size:0.85em;
+    }
     #firstdiv{
         width:100%;
+        padding:2px 0px 2px 0px;
+        font-size: 1em;
+    }
+    #boomone{
+        padding-top:0px;
+        
     }
     #secondiv{
         width:100%;
@@ -144,9 +271,15 @@ h3{
     #username, #email, #password{
         width:100%;
     }
+    #thirddiv{
+        width:100%;
+    }
+    .gmail,.linkedin{
+        font-size:0.7em;
+    }
 
 }
-@media screen and (max-width:400px){
+/* @media screen and (max-width:400px){
     .type{
         width:110px;
     }

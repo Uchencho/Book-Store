@@ -8,42 +8,63 @@
     <!-- <link rel="stylesheet" href="loginform.css" type="text/css"> -->
     <link rel="stylesheet" href="{% static 'css/loginform.css' %}" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Amaranth' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-        <div id="firstdiv">
-            <p class="welcome">Welcome to Booksmith! </p>
-            <p class="let">
-                For the Love of Books, we provide quality ebooks which can be read from your Library.
-            </p> 
-            <p id="boomone">Pick a book, Gain Knowledge!</p>
-        </div>
-        <div id="secondiv">
-            <h3>Create Account</h3>
-            <form method="POST" action="{% url 'signup' %}">
-                {% csrf_token %}
-                <input type="text" id="username" name="username" placeholder="Username"> <br>
-                <input type="email" id="email" name="email" placeholder="Email"> <br>
-                <input type="password" id="password" name="password" placeholder="Password"> <br>
-                <input type="password" id="password" name="password2" placeholder="Confirm Password"> <br>
-                <button class="typetwo">SIGN UP</button>
-
-            </form>
-        </div>
-        <div id="thirddiv">
-            <form method="POST" action="{% url 'login' %}" enctype="multipart/form-data">
-                {% csrf_token %}
-                <label for="susername">Username</label> <br>
-                <input type="text" id="susername" name="susername"> <br>
-                <label for="spassword">Password</label> <br>
-                <input type="password" id="spassword" name="spassword"> <br>
-                <a class="boom" href="#"><p>Forgot password?</p></a>
-                <button class="typetwo">SIGN IN</button>
-            </form>
-            <p class="boomtwo">New to Booksmith? 
-                <a class="boomthird" href="#" onclick="kris()">Create Account</a>
-            </p>
-        </div>
+    <header>
+        <nav id="head">
+            <ul>
+                <li>Home</li>
+                <li>News</li>
+                <li>Products</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="firstdiv">
+        <p class="welcome">Welcome to Booksmith! </p>
+        <p class="let">
+            For the Love of Books, we provide quality ebooks which can be read from your Library.
+        </p> 
+        <p id="boomone">Pick a book, Gain Knowledge!</p>
+    </div>
+    <div id="secondiv">
+        <h3>Create Account</h3>
+        <form method="POST" action="{% url 'signup' %}">
+            {% csrf_token %}
+            <input type="text" id="username" name="username" placeholder="Username"> <br>
+            <input type="email" id="email" name="email" placeholder="Email"> <br>
+            <input type="password" id="password" name="password" placeholder="Password"> <br>
+            <input type="password" id="password" name="password2" placeholder="Confirm Password"> <br>
+            <button class="typetwo">SIGN UP</button>
+        </form>
+    </div>
+    <div id="thirddiv">
+        <form method="POST" action="{% url 'login' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="susername">Username</label> <br>
+            <input type="text" id="susername" name="susername"> <br>
+            <label for="spassword">Password</label> <br>
+            <input type="password" id="spassword" name="spassword"> <br>
+            <a class="boom" href="#"><p>Forgot password?</p></a>
+            <button class="typetwo">SIGN IN</button>
+        </form>
+        <p class="boomtwo">New to Booksmith? 
+            <a class="boomthird" href="#" onclick="kris()">Create Account</a>
+        </p>
+    </div>
     <script src="{% static 'js/main.js' %}"></script>
     <!-- <script src="main.js"></script> -->
+    <div id="foot">
+        <footer>
+            <a  class="gmail" href="mailto:ojoblessingabidemi@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a>
+            <a class="linkedin"  href="https://www.linkedin.com/in/blessing-ojo-4848b6196" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <span class="connect">Connect with us</span>
+            <a  class="gmail" href="mailto:alozieuche17@gmail.com" target="_blank"><i class="far fa-envelope fa-lg"></i></a>
+            <a class="linkedin"  href="https://www.linkedin.com/in/alozie-uche/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <p><span class="foot"> &#169; Blessing &#38; Nwa-Alozie</p>
+
+        </footer>
+    </div>     
 </body>
 </html>
