@@ -17,8 +17,9 @@ def signup(request):
             if qs.exists():
                 return render(request, 'Accounts/loginform.html', {'error':'Username already exists'})
             else:
+                input_username = request.POST['username'].lower().strip()
                 User.objects.create_user(
-                    request.POST['username'],
+                    input_username,
                     password=request.POST['password']
                 )
                 return render(request, 'Accounts/loginform.html', {'error':'Please login'})
