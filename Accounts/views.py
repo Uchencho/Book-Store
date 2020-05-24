@@ -1,10 +1,13 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 
 def homepage(request):
     return render(request, 'Accounts/loginform.html')
+
+def home(request):
+    return render(request, 'Accounts/books.html')
 
 def signup(request):
     """
@@ -36,7 +39,7 @@ def login(request):
         user = auth.authenticate(username=username, password=pw)
         if user is not None:
             auth.login(request, user)
-            return render(request, 'Accounts/books.html')
+            return HttpResponseRedirect("/home/")
         else:
             return render(request, 'Accounts/loginform.html', {'error':'Username or Password is incorrect'})
     else:

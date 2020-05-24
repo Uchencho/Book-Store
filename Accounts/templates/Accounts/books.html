@@ -1,3 +1,4 @@
+{% if user.is_authenticated %}
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
@@ -165,3 +166,8 @@
     </div>     
 </body>
 </html>
+{% else %}
+<h1>
+    This block is displayed if a user is not authenticated
+</h1>
+{% endif %}
