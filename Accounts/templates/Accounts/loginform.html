@@ -32,10 +32,10 @@
         <h3>Create Account</h3>
         <form method="POST" action="{% url 'signup' %}">
             {% csrf_token %}
-            <input type="text" id="username" name="username" placeholder="Username"> <br>
-            <input type="email" id="email" name="email" placeholder="Email"> <br>
-            <input type="password" id="password" name="password" placeholder="Password"> <br>
-            <input type="password" id="password" name="password2" placeholder="Confirm Password"> <br>
+            <input type="text" id="username" name="username" placeholder="Username" required> <br>
+            <input type="email" id="email" name="email" placeholder="Email" required> <br>
+            <input type="password" id="password" name="password" placeholder="Password" required> <br>
+            <input type="password" id="password" name="password2" placeholder="Confirm Password" required> <br>
             <button class="typetwo">SIGN UP</button>
         </form>
     </div>
@@ -43,9 +43,9 @@
         <form method="POST" action="{% url 'login' %}" enctype="multipart/form-data">
             {% csrf_token %}
             <label for="susername">Username</label> <br>
-            <input type="text" id="susername" name="susername"> <br>
+            <input type="text" id="susername" name="susername" required> <br>
             <label for="spassword">Password</label> <br>
-            <input type="password" id="spassword" name="spassword"> <br>
+            <input type="password" id="spassword" name="spassword" required> <br>
             <a class="boom" href="#"><p>Forgot password?</p></a>
             <button class="typetwo">SIGN IN</button>
         </form>
