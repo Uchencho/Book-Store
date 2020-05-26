@@ -39,8 +39,14 @@ def login(request):
         user = auth.authenticate(username=username, password=pw)
         if user is not None:
             auth.login(request, user)
-            return HttpResponseRedirect("/home/")
+            return redirect("home")
         else:
             return render(request, 'Accounts/loginform.html', {'error':'Username or Password is incorrect'})
     else:
          return render(request, 'Accounts/loginform.html')
+
+
+def logout(request):
+    if request.method == "POST":
+        auth.logout(request)
+        return redirect("homepage")
