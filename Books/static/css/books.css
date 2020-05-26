@@ -87,6 +87,22 @@ img{
     border:1px solid #006595;
     
 }
+.typetwo{
+    margin-bottom:15px;
+    border:1px solid white;
+    padding:10px ;
+    width:150px;
+    border-radius:2em;
+    margin-top:15px;
+    cursor:pointer;
+    background-color: #006595;
+    color:white;
+}
+.typetwo:hover{
+    background-color: transparent;
+    color:#006595;
+    border:1px solid #006595;
+}
 @media screen and (max-width:1100px){
     img{
         width:13%;
@@ -140,7 +156,9 @@ img{
         margin-bottom: 3px;
         padding: 8px 10px;
     }
-   
+    .typetwo{
+        width:120px;
+    }
 }
 
 @media screen and (max-width:530px){
@@ -181,7 +199,9 @@ img{
     h2{
         font-size: 15px;
     }
-    
+    .typetwo{
+        width:100px;
+    }
 }
 @media screen and (max-width:250px){
     h1{
