@@ -16,7 +16,13 @@
 </head>
 <body>
     <header id="book">
-        Booksmith
+        <span class="booke">Booksmith</span>
+        <div class="dropbtn">
+            <a href="#"><i class="fas fa-align-justify fa-lg"></i></a>
+            <div class="content">
+                <a  class="not" href="javascript:{document.getElementById('logout').submit()}">LOG OUT</a>
+            </div>
+        </div>
     </header>
     <header>
     <h1>Read through our collection</h1>
@@ -154,7 +160,6 @@
         <a href="#" class="apt"><img src="{% static 'images/cover-orig-28679.jpg' %}"></a>
     </div></a>
     <div id="foot">
-        <a href="javascript:{document.getElementById('logout').submit()}"><button class="typetwo">LOG OUT</button></a>
         <form id="logout" method="POST" action="{% url 'logout' %}">
             {% csrf_token %}
             <input type="hidden"/>
@@ -172,7 +177,7 @@
 </body>
 </html>
 {% else %}
-<h1>
-    This block is displayed if a user is not authenticated
-</h1>
+<h3>
+    LOG IN to access this page.
+</h3>
 {% endif %}
