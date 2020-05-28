@@ -36,3 +36,8 @@ $(document).ready(function () {
   $('#signup-btn').on('click', showSignup);
   $('#signup-form').on('submit', validate);
 });
+
+function kris(){
+  document.getElementById("thirddiv").style.display="none";
+  document.getElementById("secondiv").style.display="block";
+}
