@@ -10,14 +10,54 @@ body{
     margin:0;
     padding:0;
 }
-
+.log{
+   
+    position:absolute;
+    right:0;
+  
+    text-decoration: none;
+}
+.dropbtn{
+    color:black;
+    position: absolute;
+    left:0;
+    display:inline;
+    margin-left:20px;
+    padding: 18px 10px 0px 0px;
+    /* font-size: 17px; */
+}
+.dropbtn:hover .content{
+    display:block;
+}
+.content{
+    font-size:14px;
+    display:none;
+    position:absolute;
+    left: 0;
+    margin-left: -1rem;
+    z-index:1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding:12px 16px;
+    width:100px;
+}
+a.not{
+    text-decoration: none;
+    color:black;
+}
+a.log:hover{
+    color: #006595;
+}
 #book{
     background-color: #f1f1f1;
     text-align: center;
     padding:0.1%;
     height:80px;
+   
+}
+.booke{
     font-size: 3.2em;
     font-family: 'Sofia';
+    
 }
 #foot{
     padding-top:15px;
@@ -108,7 +148,7 @@ img{
         width:13%;
         margin:1%;
     }
-    #book{
+    .booke{
         font-size:3em;
     }
 }
@@ -117,7 +157,7 @@ img{
         width:17%;
         margin:0.8%;
     }
-    #book{
+    .booke{
         padding-top:10px;
         font-size:2.5em;
     }
@@ -131,7 +171,7 @@ img{
         width:18%;
         margin:0.4%;
     }
-    #book{
+    .booke{
         padding-top:10px;
         font-size:2.5em;
     }
@@ -141,7 +181,7 @@ img{
         width:18%;
         margin:0.3%;
     }
-    #book{
+    .booke{
         padding-top:10px;
         font-size:2.5em;
     }
@@ -183,7 +223,7 @@ img{
         width:23%;
         margin:0.4%;
     }
-    #book{
+    .booke{
         padding:20px;
         font-size:2em;
     }
